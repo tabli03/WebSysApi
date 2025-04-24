@@ -1,0 +1,18 @@
+{
+"id": 1,
+"name": "Arwyn Tablizo",
+"email": "arwyntablizo03@gmail.com",
+"phone": "09276623377",
+"address"{
+     "street": "Blk 1 lot 50 carlisle Mansion PH 2",
+     "city": "Caloocan City",
+     "state": "Philippines",
+     "zip": "1420"
+},
+"company" {
+    "name": "Lightweight Solutions",
+    "position": "Front End Developer",
+    "department": "UI/UX Design"
+}
+     
+}
