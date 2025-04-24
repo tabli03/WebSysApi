@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieewport" content="width-device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <button onclick="fetchMessage()">Click Me</button>
+    <div id="message"></div>
+
+    <script>
+        
+        function fetchMessage() {
+
+            let xhr = new XMLHttpRequest();
+
+            xhr.open('GET', 'https://github.com/tabli03/WebSysApi/blob/main/data.json', true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    let response = JSON.parse(xhr.reponseText);
+                    document.getElemntById('message').innerText= response.phone;
+
+                } else{
+                    document.getElementById('message').innerText= 'error';
+                }
+            };
+        
+
+        xhr.send();
+        }
+    </script>
+
+
+
+</body>
+</html>
